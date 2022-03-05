@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "e59f9579-8ac9-4e79-bb02-c701baa8af26",
+		"name": "Upload Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "File Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "document",
+							"type": "file",
+							"src": "/Users/paradox/Desktop/e2.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/upload",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

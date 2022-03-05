@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-1hjyvultk!!ig3+$t(q0x9)9!-zukg@&@67*g&4+=yf0x8b@)y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
+APPEND_SLASH=False
 
 # Application definition
 
@@ -125,6 +126,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mysite/static')
 ]
 
+STATIC_ROOT = '/home/ubuntu/Upload-Model/mysite/static'
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
@@ -133,3 +136,7 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ['*']
+
+#ACCOUNT_DEFAULT_HTTP_PROTOCOL = "https"
